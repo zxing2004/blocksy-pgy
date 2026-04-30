@@ -551,6 +551,9 @@ if (! function_exists('blocksy_post_meta')) {
 						));
 				?></a></li><?php }
 
+			if ($single_meta['id'] === 'views' && function_exists('the_views')) {
+				?><li class="meta-views"><?php the_views(); ?></li><?php }
+
 			$maybe_taxonomy = null;
 
 			if ($single_meta['id'] === 'categories') {
@@ -830,6 +833,11 @@ function blocksy_post_meta_defaults($opts = [], $args = []) {
 
 		[
 			'id' => 'comments',
+			'enabled' => false,
+		],
+
+		[
+			'id' => 'views',
 			'enabled' => false,
 		]
 	];

@@ -74,7 +74,7 @@ if ($page_structure === 'none' || blocksy_post_uses_vc()) {
 			echo blocksy_single_content();
 		?>
 
-		<?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>
 
 		<?php do_action('blocksy:single:container:bottom'); ?>
 	</div>

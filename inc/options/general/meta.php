@@ -118,6 +118,11 @@ if (! isset($meta_elements)) {
 		[
 			'id' => 'comments',
 			'enabled' => true,
+		],
+
+		[
+			'id' => 'views',
+			'enabled' => false,
 		]
 	]);
 }
@@ -282,6 +287,11 @@ $options = [
 			'comments' => [
 				'label' => __('Comments', 'blocksy'),
 				'options' => $comments_options,
+			],
+
+			'views' => [
+				'label' => __('Views', 'blocksy'),
+				'options' => [],
 			],
 
 			'post_date' => [
